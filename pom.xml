@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>13</version>
+        <version>17</version>
     </parent>
     <groupId>org.apache.ws</groupId>
     <artifactId>ws-parent</artifactId>
@@ -63,7 +63,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.9</version>
+                    <version>2.10.3</version>
                     <configuration>
                         <breakiterator>true</breakiterator>
                         <!-- The notimestamp, windowtitle and bottom parameters are chosen to minimize the number
@@ -81,7 +81,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.2</version>
+                <version>3.4</version>
                 <configuration>
                     <skipDeploy>true</skipDeploy>
                 </configuration>
@@ -89,7 +89,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-publish-plugin</artifactId>
-                <version>1.0-beta-2</version>
+                <version>1.1</version>
             </plugin>
         </plugins>
     </build>
