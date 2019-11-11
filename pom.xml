@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>20</version>
+        <version>21</version>
     </parent>
     <groupId>org.apache.ws</groupId>
     <artifactId>ws-parent</artifactId>
@@ -53,9 +53,9 @@
         </mailingList>
     </mailingLists>
     <scm>
-        <connection>scm:svn:http://svn.apache.org/repos/asf/webservices/parent/trunk</connection>
-        <developerConnection>scm:svn:https://svn.apache.org/repos/asf/webservices/parent/trunk</developerConnection>
-        <url>http://svn.apache.org/viewvc/webservices/parent/trunk</url>
+        <connection>scm:git:https://gitbox.apache.org/repos/asf/ws-parent.git</connection>
+        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/ws-parent.git</developerConnection>
+        <url>https://gitbox.apache.org/repos/asf?p=ws-parent.git;a=summary</url>
     </scm>
     <build>
         <pluginManagement>
@@ -63,7 +63,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.0.1</version>
+                    <version>3.1.1</version>
                     <configuration>
                         <breakiterator>true</breakiterator>
                         <!-- The notimestamp, windowtitle and bottom parameters are chosen to minimize the number
@@ -88,6 +88,23 @@
                 <configuration>
                     <skipDeploy>true</skipDeploy>
                 </configuration>
+                <dependencies>
+                  <dependency>
+                    <groupId>org.apache.maven.wagon</groupId>
+                    <artifactId>wagon-scm</artifactId>
+                    <version>3.3.3</version>
+                  </dependency>
+                  <dependency>
+                    <groupId>org.apache.maven.scm</groupId>
+                    <artifactId>maven-scm-api</artifactId>
+                    <version>1.11.2</version>
+                  </dependency>
+                  <dependency>
+                    <groupId>org.apache.maven.scm</groupId>
+                    <artifactId>maven-scm-provider-svnexe</artifactId>
+                    <version>1.11.2</version>
+                  </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
