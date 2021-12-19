@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache</groupId>
         <artifactId>apache</artifactId>
-        <version>21</version>
+        <version>24</version>
     </parent>
     <groupId>org.apache.ws</groupId>
     <artifactId>ws-parent</artifactId>
@@ -63,7 +63,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.3.1</version>
                     <configuration>
                         <breakiterator>true</breakiterator>
                         <!-- The notimestamp, windowtitle and bottom parameters are chosen to minimize the number
@@ -84,7 +84,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
-                <version>3.7.1</version>
+                <version>3.9.1</version>
                 <configuration>
                     <skipDeploy>true</skipDeploy>
                 </configuration>
@@ -92,24 +92,24 @@
                   <dependency>
                     <groupId>org.apache.maven.wagon</groupId>
                     <artifactId>wagon-scm</artifactId>
-                    <version>3.3.3</version>
+                    <version>3.4.3</version>
                   </dependency>
                   <dependency>
                     <groupId>org.apache.maven.scm</groupId>
                     <artifactId>maven-scm-api</artifactId>
-                    <version>1.11.2</version>
+                    <version>1.12.0</version>
                   </dependency>
                   <dependency>
                     <groupId>org.apache.maven.scm</groupId>
                     <artifactId>maven-scm-provider-svnexe</artifactId>
-                    <version>1.11.2</version>
+                    <version>1.12.0</version>
                   </dependency>
                 </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-publish-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.0</version>
             </plugin>
         </plugins>
     </build>
